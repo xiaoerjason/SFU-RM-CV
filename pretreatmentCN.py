@@ -9,10 +9,6 @@ def rename():
     # 需要替换的文件路径
     # python路径改变也要重新改写路径
     user_path="E://DJI ROCO//robomaster_South"
-    # user_path1="E://DJI ROCO//robomaster_Central"
-    # user_path2="E://DJI ROCO//robomaster_Final"
-    # user_path3="E://DJI ROCO//robomaster_North"
-    # user_path4="E://DJI ROCO//robomaster_South"
 
     image_path=user_path+"//image"
     image_annotation_path=user_path+"//image_annotation"

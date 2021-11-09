@@ -5,7 +5,13 @@ from os import getcwd
 
 sets = ['train', 'val', 'test']
 classes = ["car"]   # 改成自己的类别
-abs_path = os.getcwd()
+
+# 获取当前目录
+wd=os.getcwd()
+# 获取上上级目录
+wdd=os.path.abspath(os.path.join(wd, "../.."))
+
+abs_path =wdd
 print(abs_path)
 
 def convert(size, box):

@@ -11,11 +11,18 @@ import argparse
 # parser.add_argument('--txt_path', default='ImageSets/Main', type=str, help='output txt label path')
 # opt = parser.parse_args()
 
+# 验证集与训练集划分
 trainval_percent = 1.0
 train_percent = 0.9
+
+# 获取当前目录
 wd=os.getcwd()
+# # 获取上上级目录
+# wdd=os.path.abspath(os.path.join(wd, "../.."))
+
 xmlfilepath = wd+"\\images_annotation"
 txtsavepath = wd+"\\images_sets"
+
 total_xml = os.listdir(xmlfilepath)
 if not os.path.exists(txtsavepath):
     os.makedirs(txtsavepath)
